@@ -106,3 +106,22 @@ body {
     line-height: var(--line-height);
     padding: 0.3rem 0;
 }
+.skills {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+  
+.skill-title {
+    margin-bottom: 1rem;
+}
+  
+.skills-container img {
+    padding: 1.25rem;
+}
+  
+.icon {
+    width: 11.875rem;
+    height: 11.25rem;
+}
