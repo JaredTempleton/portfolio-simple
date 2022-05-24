@@ -1,3 +1,4 @@
+/* CSS Varables */
 :root {
     --font-family: "Georgia";
     --normal-font: 400;
@@ -14,6 +15,7 @@
     --transition: 0.3s;
 }
 
+/* CSS Resets */
 html {
     scroll-behavior: smooth;
     height:100%;
@@ -24,25 +26,22 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
-
 ul {
     list-style-type: none;
-}
-  
+} 
 a {
     text-decoration: none;
     color: var(--primary-color);
-}
-  
+} 
 a:hover {
     color: var(--secondary-color);
 }
-  
 body {
     font-family: var(--font-family);
     margin:0;
 }
 
+/* Navbar Styling */
 .navbar {
     position: sticky;
     top: 0;
@@ -58,7 +57,6 @@ body {
     background-color: var(--bg-color);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
-
 .navbar a {
     color: var(--primary-color);
     transition: var(--transition);
@@ -67,16 +65,15 @@ body {
     color: var(--secondary-color);
     border-bottom: 2px solid var(--secondary-color);
 }
-  
 .navbar ul {
     display: flex;
     gap: 1.9rem;
 }
-  
 .navabar ul li {
     font-weight: var(--bold-font);
 }
 
+/* Hero Styling */
 .title {
     color: var(--primary-color);
 }
@@ -93,38 +90,34 @@ body {
     width: 37.5rem;
     border: solid;
     border-radius: 20px;
-}
-  
+} 
 .bio {
     width: 25rem;
     padding: 0.625rem;
     border-radius: 6px;
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
-  
 .bio h1 {
     margin-bottom: var(--bottom-margin);
 }
-  
 .bio p {
     line-height: var(--line-height);
     padding: 0.3rem 0;
 }
+
+/* SKills Styling */
 .skills {
     max-width: 68.75rem;
     margin: auto;
     text-align: center;
     margin-top: 2.5rem;
 }
-  
 .skill-title {
     margin-bottom: 3rem;
-}
-  
+} 
 .skills-container img {
     padding: 1.25rem;
-}
-  
+} 
 .icon {
     width: 11.875rem;
     height: 11.25rem;
@@ -134,6 +127,8 @@ body {
     padding: 20px;
     margin: 10px;
 }
+
+/* Projects Styling */
 .projects {
     background-color: var(--bg-color);
     padding: 32px 0;
@@ -160,15 +155,12 @@ body {
 .project-container p {
     padding: 0.4rem;
 }
-  
 .project-title {
     margin-bottom: var(--bottom-margin);
 }
-  
 .project-snippet {
     margin-bottom: var(--bottom-margin);
 }
-  
 .project-card {
     background-color: #fff;
     border-radius: 11px;
@@ -176,15 +168,15 @@ body {
     padding: 20px;
     margin: 10px;
 }
+
+/* Conact Styling */
 .contact {
     margin-top: 2rem;
 }
-  
 .contact h2 {
     text-align: center;
     margin-bottom: var(--bottom-margin-2);
 }
-  
 .contact-form-container {
     max-width: 40.75rem;
     margin: 0 auto;
@@ -197,12 +189,10 @@ body {
     font-weight: var(--bold-font);
     color: var(--primary-color);
 }
-  
 .contact-form-container textarea {
     min-height: 6.25rem;
     font-size: 14px;
 }
-  
 .contact-form-container .input-field {
     width: 100%;
     padding-top: 10px;
@@ -229,6 +219,8 @@ body {
     border: 2px solid var(--primary-color);
     cursor: pointer;
 }
+
+/* Background Styling */
 .bg {
     animation:slide 3s ease-in-out infinite alternate;
     background-image: linear-gradient(-60deg, rgb(231, 163, 60) 50%, #09f 50%);
@@ -240,16 +232,13 @@ body {
     top:0;
     z-index:-1;
 }
-  
 .bg2 {
     animation-direction:alternate-reverse;
     animation-duration:4s;
 }
-  
 .bg3 {
     animation-duration:5s;
-}
-  
+} 
 .content {
     background-color:rgba(255,255,255,.8);
     border-radius:.25em;
@@ -261,12 +250,10 @@ body {
     text-align:center;
     top:50%;
     transform:translate(-50%, -50%);
-}
-  
+}  
 h1 {
     font-family:monospace;
 }
-  
 @keyframes slide {
     0% {
       transform:translateX(-25%);
@@ -275,3 +262,12 @@ h1 {
       transform:translateX(25%);
     }
 }
+@media (min-width: 600px) {
+    main {
+      flex-wrap: nowrap;
+    }
+
+    div {
+      flex-basis: 33%;
+    }
+  }
